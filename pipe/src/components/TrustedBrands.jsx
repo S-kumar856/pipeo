@@ -22,7 +22,7 @@ const TrustedBrands = () => {
     { id: 6, src: logo6, alt: 'Logo 6' },
   ];
 
-  // Responsive settings for the slider
+  // Revised settings to prevent bouncing when dragging
   const settings = {
     dots: false,
     arrows: false,
@@ -34,6 +34,12 @@ const TrustedBrands = () => {
     autoplaySpeed: 3000,
     pauseOnHover: true,
     cssEase: "linear",
+    swipeToSlide: true,           // This allows users to swipe to a slide
+    draggable: true,              // Ensures dragging is enabled
+    touchThreshold: 10,           // Makes dragging more responsive (lower number = more sensitive)
+    waitForAnimate: false,        // Don't wait for animation to finish when manually navigating
+    pauseOnFocus: true,           // Pause autoplay when slider is focused
+    pauseOnDotsHover: true,       // Pause autoplay when hovering on dots
     responsive: [
       {
         breakpoint: 1024,
@@ -62,10 +68,10 @@ const TrustedBrands = () => {
   return (
     <div className="w-full bg-gray-100 py-4 md:py-6">
       <div className="container mx-auto px-4 md:px-8">
-      <div className='flex items-center justify-center'>
-        <h2 className="heading3 text-center text-xl md:text-3xl md:w-190 lg:text-4xl font-bold textcolor1 mb-4 md:mb-6">
-          Trusted by 25,000+ world-class brands and organizations of all sizes
-        </h2>
+        <div className='flex items-center justify-center'>
+          <h2 className="heading3 text-center text-xl md:text-3xl md:w-190 lg:text-4xl font-bold textcolor1 mb-4 md:mb-6">
+            Trusted by 25,000+ world-class brands and organizations of all sizes
+          </h2>
         </div>
 
         <div className="max-w-9xl px-0 md:px-2 md:py-6 lg:py-12 lg:px-15">

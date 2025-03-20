@@ -10,7 +10,16 @@
 .color2 {
   background-color: var(--green);
   color: var(--green);
+  
 }
+
+/* .bordercolor2 {
+  border-color: var(--green);
+} */
+.bordercolor2:hover {
+  border-color: var(--green);
+}
+
 .color1 {
   background-color: var(--blue);
 }
