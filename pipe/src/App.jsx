@@ -5,6 +5,7 @@ import BlogCarousel from './components/BlogCarousel'
 import TrustedBrands from './components/TrustedBrands'
 import BannerSection from './components/BannerSection'
 import PlumbingService from './components/PlumbingService'
+import Error404 from './components/Error404'
 
 
 const App = () => {
@@ -15,7 +16,7 @@ const App = () => {
     <BlogCarousel/>
     <TrustedBrands/>
     <PlumbingService/>
-
+    <Error404/>
     <PipeoFooter/>
       
     </>

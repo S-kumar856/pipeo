@@ -5,6 +5,8 @@
 :root {
   --green: #389a48;
   --blue: #022659;
+  --lightgreen: #8ae20ed7;
+  --white: #ffffff;
 }
 
 .color2 {
@@ -12,12 +14,11 @@
   color: var(--green);
   
 }
-
-/* .bordercolor2 {
-  border-color: var(--green);
-} */
+.iconcolor {
+  background-color: var(--lightgreen);
+}
 .bordercolor2:hover {
-  border-color: var(--green);
+  border-color: var(--lightgreen);
 }
 
 .color1 {
@@ -28,6 +29,9 @@
 }
 .textcolor1 {
   color: var(--blue);
+}
+.textcolor3{
+  color: var(--white);
 }
 .dot {
   color: var(--green);
