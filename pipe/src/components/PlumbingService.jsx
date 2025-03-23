@@ -3,7 +3,7 @@ import { Briefcase, Wrench, Coffee, Gem } from 'lucide-react';
 import Slider from 'react-slick';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
-
+// import img1 from "../../assets/homepage/img1.webp"
 const PlumbingService = () => {
     const [isMobile, setIsMobile] = useState(false);
 
